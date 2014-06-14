@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+
+<h2>Performing Gestures</h2>
+
+<p>For imformation on how to perform a gestures, see
+<ol>
+	<li><a href="https://developer.leapmotion.com/documentation/csharp/devguide/Leap_Gestures.html#id2">Circles</a></li>
+	<li><a href="https://developer.leapmotion.com/documentation/csharp/devguide/Leap_Gestures.html#id3">Swipes</a></li>
+	<li><a href="https://developer.leapmotion.com/documentation/csharp/devguide/Leap_Gestures.html#id4">Key Taps</a></li>
+	<li><a href="https://developer.leapmotion.com/documentation/csharp/devguide/Leap_Gestures.html#id4">Screen Taps</a></li>
+</ol>
+A <i>Circle</i> can be either <i>Right</i> or <i>Left</i> (clockwise or counter-clockwise). A <i>Swipe</i> may be <i>Left</i>, <i>Right</i>, <i>Up</i>, or <i>Down</i>. <i>Key Taps</i> and <i>Screen Taps</i> have no specific direction.
+</p>
+
+<h3>Gesture OSD</h3>
+<p>Once the Leap(™) Motion Controller detecs a gesture, it will be displayed on an OSD (On-Screen-Display) at the top-left corner of the monitor.</p>
+<img src="Gestures_OSD.png">
+<br>In the screenshot above, the detected gesture was <i>Swipe Left</i>. Directly underneath that is a list of actions whose gesture chains start with <i>Swipe Left</i>. As you lengthen the gesture chain, the list of suggestions narrows down based upon that criteria.</br>
+
+<h4>Gesture Chains</h4>
+<p>Throughout the documentation the phrase, "gesture chain" is used. What this means is: many gestures linked together to create a chain, such as <i>Swipe Left, Swipe Right, Swipe Up</i>. How does it work? As previously explained, when a gesture such as <i>Swipe Left</i> is detected, it will be displayed on the OSD. As long as the hand stays within the Leap(™) Motion Controller's <a href="https://www.taylordigital.com/wp-content/uploads/2013/07/Leap-Motion-Field-Of-View-1024x680.jpg">field of view</a> another gesture may be executed and will then be added to the chain. To end the chain, simply remove hand from the Leap(™) Motion Controller's field of view.</p>
+
+<br></br>
+	<div id="footer">
+	<b>&copy; 2014 Windows Master</b>
+	</div>
+
+</div>
+</body>
+</html>

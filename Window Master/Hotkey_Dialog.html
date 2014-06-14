@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+
+<h2>Hotkey Dialog</h2>
+
+<p>Throughout Windows Master, you can assign hotkeys and gestures to actions. This dialog is provided as a means to set that hotkey and gesture.</p>
+<p>To assign a hotkey, focus the white field (containing <i>Ctrl + Alt + Num 1</i> in the screenshot below). After doing so, perform the desired hotkey combination; if it is a valid combination, then that will be displayed in the control, otherwise "None" will be displayed.</p>
+<p>Notice the "Left" "Right" and "Either" options below. In the screenshot below, the hotkey is set to <i>LCtrl + LAlt + Num1.</i> This means that you could assign a different action the hotkey, <i>RCtrl + RAlt + Num1</i> <i>RCtrl + LAlt + Num1</i> and finally <i>LCtrl + RAlt + Num1</i>. However, if the combination was set to <i>Ctrl + Alt + Num1</i> with <i>Either</i> checked, then you could not set any of the aforementioned hotkey combinations to any other actions. In summary, <i>Left</i> and <i>Right</i> allow you to set more hotkeys, but it requires a good memory to keep track of all the permutations.</p>
+
+<p><img src="Hotkey_Dialog.png"></p>
+<p><i>Note: The Windows key cannot be detected, so a checkbox is provided instead.</i>
+<br><i>Note: When recording a hotkey and using a key from the NumPad, take notice of the state of your NumLock. Also keep this is mind when performing that keystroke combination.</i></br></p>
+<h2>Validation</h2>
+<p>Summary of what is validated:</p>
+
+<ol>
+	<li>Preice hotkey is not already assigned elsewhere.</li>
+	<li>Hotkey combination does not conflict with another. For example, if one hotkey is set to <i>LCtrl + LAlt + Num1,</i> then validation would not allow <i>Ctrl + Alt + Num1.</i> Why? When the <i>Left</i> or <i>Right</i> option is set, this indicates the need to differentiate between left and right. If <i>Either</i> is then specified, that is inconsistent and indeterminable behavior.</li>
+	<li>Gesture is not already assigned elsewhere.</li>
+</ol>
+
+<img src="Hotkey_Dialog_Error.png"></p>
+
+	<div id="footer">
+	<b>&copy; 2014 Windows Master</b>
+	</div>
+
+</div>
+</body>
+</html>

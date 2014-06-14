@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
+<head><link rel="stylesheet" type="text/css" href="style.css"></head>
 <body>
 
-<h1>Sequencing</h1>
+<h2>Sequencing</h2>
 
-<p>Window sequencing is a simple, but efficient concept.</p>
-<p><img src="Sequencing.png"></p>
-<a href="Sequencing.png"></a>
+<p>Window sequencing is a simple, efficient concept. For each sequence, a hotkey and/or gesture maybe mapped. Once you press the hotkey or perform the gesture, the active window will be sequenced. In the screenshow below there are 2 tables.</p>
+
+<ol>
+<li>On the left is the hotkey/gesture table, where each row represents a unique hotkey/gesture combination. To edit a particular combination, highlight the row and: press F2, press Alt + E, double click on the row, or click the edit button (Pen + paper). To add a unique combination, click the + button. To remove a row, click the trash can. To understand how to add a hotkey/gesture combination, see the <a href="Hotkey_Dialog.html">hotkey dialog</a>.</li>
+<li>On the right is the sequence table. 5 sequences are mapped to the hotkey <i>Left Control + Left Alt + Numpad1</i>. You may add, edit, and delete sequences in the same fashion as the hotkey/combination table. To understand how to add a sequence, see the screenshot of the sequence dialog at the bottom.</a></li>
+</ol>
+
+<h3>How it works</h3>
+<p>Activate a sequence by pressing the appropriate hotkey or performing the appropriate gesture. The active window will be fit to the 1st sequence according to your pre-defined dimensions. If you activate that same sequence again, the same window will be fit to the 2nd sequence and so on. When you have reached the final sequence and activate it yet again, the window will will be fit to the 1st sequence again. In this sense, sequencing "wraps around."</p>
+
+<img src="Sequencing.png">
+<br>Note the <i>preview</i> section. This gives an <i>estimate</i> of where a window will be placed based upon the input sequence percentages.</br>
+
+<h4>Sequence Dialog</h4>
+<img src="Sequence_Dialog.png">
+
+<br>You can manually enter in percentages, or, more easily, you can click the <i>Set with Window</i> button.</br>
+<img src="Window_Placer.png">
 
 	<div id="footer">
-	&copy; 2014 Windows Master
+	<b>&copy; 2014 Windows Master</b>
 	</div>
 
 </div>
