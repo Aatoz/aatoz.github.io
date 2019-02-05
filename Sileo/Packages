@@ -1,0 +1,16 @@
+Package: com.aatoz.radialwidget
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Noah Graydon <aatozb@gmail.com>
+Filename: ./debs/com.aatoz.radialwidget_1.0_darwin-amd64.deb
+Size: 69496
+MD5sum: f99db0726f3aa0f3887ef58a986df181
+SHA1: 7bceca4d21f097fcd4648bf37cfc8750ba365d09
+SHA256: 52f1ee70d8386ecb1f8953d8c51412c042d4b99d3fbb4218319974f81177d1f2
+Section: HTML Widgets
+Homepage: http://aatoz.github.io/Sileo
+Description: Battery, Signal, and RAM usage, all from a beautiful radial widget.
+Author: Noah Graydon <aatozb@gmail.com>
+Depiction: https://aatoz.github.io/Sileo/depictions/?p=com.aatoz.radialwidget
+Name: Radial Widget
+
