@@ -11,7 +11,7 @@ SHA256: bdb13d251e00b6071851babb4cb6741f594af84de84103b9ee9a193f16f8f7a8
 Section: default
 Priority: extra
 Homepage: http://example.com/no-uri-given
-Description: no description given
+Description: A Radial Widget for use with Xen HTML
 License: unknown
 Vendor: super_mac@MacBook-Pro.local
 
