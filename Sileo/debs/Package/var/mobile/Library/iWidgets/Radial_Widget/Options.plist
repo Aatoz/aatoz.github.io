@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>hidemusic</string>
+		<key>label</key>
+		<string>Hide when not playing?</string>
+		<key>type</key>
+		<string>switch</string>
+		<key>default</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>colormusic</string>
+		<key>label</key>
+		<string>Color code:</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>default</key>
+		<string>rgba(0,0,0,.5)</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>blureffect</string>
+		<key>label</key>
+		<string>Blur Effect?</string>
+		<key>type</key>
+		<string>switch</string>
+		<key>default</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>shadoweffect</string>
+		<key>label</key>
+		<string>Shadow Effect?</string>
+		<key>type</key>
+		<string>switch</string>
+		<key>default</key>
+		<true/>
+	</dict>	
+	<dict>
+		<key>name</key>
+		<string>player</string>
+		<key>label</key>
+		<string>Default Player</string>
+		<key>type</key>
+		<string>select</string>
+		<key>default</key>
+		<string>Apple Music</string>
+		<key>options</key>
+		<dict>
+			<key>Apple Music</key>
+			<string>apple</string>
+			<key>Spotify</key>
+			<string>spotify</string>
+			<key>TIDAL</key>
+			<string>tidal</string>
+			<key>Play Music</key>
+			<string>googlemusic</string>
+		</dict>
+	</dict>
+</array>
+</plist>

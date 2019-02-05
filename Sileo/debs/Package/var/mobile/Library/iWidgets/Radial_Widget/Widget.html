@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
+	</head>
+<body>
+		<div id="batteryWrapper" class="opacity1" style="visibility:visible">
+			<div class="context">battery</div>
+			<svg id='batteryRadial' class="progress blue noselect" data-progress="100" x="0px" y="0px" viewBox="0 0 80 80">
+				<path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<text class="value" x="50%" y="55%">0%</text>
+			</svg>
+		</div>
+
+		<div id="signalBarsWrapper" class="opacity0" style="visibility:hidden">
+			<div class="context">signal</div>
+			<svg id='signalBarsRadial' class="progress blue noselect" data-progress="100" x="0px" y="0px" viewBox="0 0 80 80">
+				<path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<text class="value" x="50%" y="55%">0%</text>
+			</svg>
+		</div>
+
+		<div id="ramUsedWrapper" class="opacity0" style="visibility:hidden">
+			<div class="context">RAM used</div>
+			<svg id='ramRadial' class="progress blue noselect" data-progress="0" x="0px" y="0px" viewBox="0 0 80 80">
+				<path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+				<text class="value" x="50%" y="55%">0%</text>
+			</svg>
+		</div>
+		<script>
+
+var forEach = function (array, callback, scope) {
+	for (var i = 0; i < array.length; i++) {
+		callback.call(scope, i, array[i]);
+	}
+};
+
+var g_iView = 0;
+var g_vBattery = document.getElementById("batteryWrapper");
+var g_vBatteryRadial = document.getElementById("batteryRadial");
+var g_vSignalBars = document.getElementById("signalBarsWrapper");
+var g_vSignalBarsRadial = document.getElementById("signalBarsRadial");
+var g_vRAM = document.getElementById("ramUsedWrapper");
+var g_vRAMRadial = document.getElementById("ramRadial");
+
+function cycle(e) {
+	g_iView++;
+	if (g_iView > 2)
+		g_iView = 0;
+
+	iPct = 100;
+	if (g_iView == 0) {
+		ShowHideNode(g_vBattery, true);
+		ShowHideNode(g_vSignalBars, false);
+		ShowHideNode(g_vRAM, false);
+		iPct = g_vBatteryRadial.getAttribute("data-progress");
+	}
+	else if (g_iView == 1) {
+		ShowHideNode(g_vBattery, false);
+		ShowHideNode(g_vSignalBars, true);
+		ShowHideNode(g_vRAM, false);
+		iPct = g_vSignalBarsRadial.getAttribute("data-progress");
+	}
+	else if (g_iView == 2) {
+		ShowHideNode(g_vBattery, false);
+		ShowHideNode(g_vSignalBars, false);
+		ShowHideNode(g_vRAM, true);
+		iPct = g_vRAMRadial.getAttribute("data-progress");
+	}
+
+	doUpdate(iPct);
+}
+
+function ShowHideNode(vNode, bShow) {
+	var sStyle = vNode.getAttribute("style");
+	//if (sStyle.indexOf("visibility:visible") == 0)
+	if (bShow)
+		sStyle = sStyle.replace("visibility:hidden", "visibility:visible");
+	else sStyle = sStyle.replace("visibility:visible", "visibility:hidden");
+	vNode.setAttribute("style", sStyle);
+	vNode.setAttribute("class", "opacity" + (bShow ? "1" : "0"));
+}
+
+document.addEventListener("touchstart", function(){}, true);
+window.onload = function() {
+	document.getElementById("batteryWrapper").onclick = cycle;
+	document.getElementById("signalBarsWrapper").onclick = cycle;
+	document.getElementById("ramUsedWrapper").onclick = cycle;
+	mainUpdate("battery");
+	doUpdate();
+}
+
+function doUpdate(iPct, iContext) {
+	if (iContext !== g_iView)
+		return;
+
+	var max = -219.99078369140625;
+	forEach(document.querySelectorAll('.progress'), function (index, value) {
+	percent = value.getAttribute('data-progress');
+		value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+		value.querySelector('.value').innerHTML = percent + '%';
+
+		document.getElementsByClassName("track")[iContext].setAttribute("style", "stroke: " + asProgressColourTween[iPct-1])
+		document.getElementsByClassName("value")[iContext].setAttribute("style", "fill: " + asProgressColourTween[iPct-1])
+		document.getElementsByClassName("context")[iContext].setAttribute("style", "color: " + asProgressColourTween[iPct-1])
+	});
+}
+
+function mainUpdate(type) {
+  var iBatteryLevel;
+  var iSignalBars;
+  var iRAMUsed;
+
+  if (type == "battery") {
+	if (iBatteryLevel !== batteryPercent) {
+		iBatteryLevel = batteryPercent;
+		g_vBatteryRadial.setAttribute("data-progress", batteryPercent);
+		doUpdate(batteryPercent, 0);
+	 }
+	 if (iRAMUsed !== iRAMUsed) {
+		iRAMUsed = ramUsed;
+		g_vRAMRadial.setAttribute("data-progress", ramUsed);
+		doUpdate(ramUsed, 2);
+	 }
+  }
+  if (type == "statusbar") {
+        if (iSignalBars !== signalBars) {
+			iSignalBars = signalBars;
+			var iPct = signalBars/5*100;
+			g_vSignalBarsRadial.setAttribute("data-progress", iPct);
+			doUpdate(iPct, 1);
+		}
+    }
+}
+
+var asProgressColourTween = [
+  "#ff4400", "#ff4900", "#ff4a00", "#ff4c00", "#ff4d00", "#ff4f00", "#ff5000", "#ff5100", "#ff5200", "#ff5400",
+  "#ff5600", "#ff5700", "#ff5900", "#ff5a00", "#ff5c00", "#ff5c00", "#ff5e00", "#ff5f00", "#ff6100", "#ff6300",
+  "#ff6400", "#ff6600", "#ff6700", "#ff6800", "#ff6900", "#ff6b00", "#ff6c00", "#ff6e00", "#ff6f00", "#ff7100",
+  "#ff7200", "#ff7300", "#ff7500", "#ff7600", "#ff7800", "#ff7900", "#ff7a00", "#ff7c00", "#ff7d00", "#ff7f00",
+  "#ff8700", "#ff8800", "#ff8a00", "#ff8b00", "#ff8c00", "#ff8e00", "#ff8f00", "#ff9100", "#ff9200", "#ff9400",
+  "#ff9400", "#fc9500", "#fa9600", "#f79700", "#f59800", "#f29900", "#f09a00", "#ed9c00", "#eb9c00", "#e89e00",
+  "#e69e00", "#e3a000", "#e0a100", "#dea200", "#dba300", "#d9a400", "#d6a500", "#d4a600", "#d1a700", "#cfa800",
+  "#cca900", "#c9ab00", "#c7ab00", "#c4ad00", "#c2ae00", "#bfaf00", "#bdb000", "#bab100", "#b8b200", "#b5b300",
+  "#b3b400", "#b0b500", "#adb600", "#abb700", "#a8b900", "#a6b900", "#a3bb00", "#a1bb00", "#9ebd00", "#9cbe00",
+  "#99bf00", "#96c000", "#94c100", "#91c200", "#8fc300", "#8cc400", "#8ac500", "#87c600", "#85c700", "#82c800"
+];
+
+/*
+Used to calc the variable 'max' 
+and set 'stroke-dasharray' and 
+'stroke-dashoffset' in the css
+  	console.log(document.querySelector('.fill').getTotalLength());		
+*/
+</script>
+</body>
+</html>

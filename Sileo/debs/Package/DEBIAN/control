@@ -1,0 +1,10 @@
+Package: com.aatoz.radialwidget
+Name: Radial Widget
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Battery, Signal, and RAM usage, all from a beautiful radial widget.
+Depiction: http://aatuz.github.io/sileo/radialwidget.html
+Homepage: http://aatuz.github.io/sileo
+Maintainer: Noa Graydon <aatozb@gmail.com>
+Author: Jesse Bryan <aatozb@gmail.com>
+Section: HTML Widgets
