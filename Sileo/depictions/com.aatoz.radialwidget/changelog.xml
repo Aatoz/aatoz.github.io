@@ -1,5 +1,9 @@
 <changelog>
 	<changes>
+		<version>1.0.2</version>
+		<change>Bug fix: Cydia download fail due to /.DS_Store file conflict with meridian jailbreak bootstrap</change>
+	</changes>
+	<changes>
 		<version>1.0.1</version>
 		<change>Bug fix: RAM was always 0</change>
 	</changes>
