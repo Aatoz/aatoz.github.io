@@ -1,0 +1,23 @@
+<package>
+	<id>com.aatoz.radialwidget</id>
+	<name>Radial Widget</name>
+	<version>1.0.0</version>
+	<compatibility>
+		<firmware>
+			<maxiOS>12.1.2</maxiOS>
+			<otherVersions>unconfirmed</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies></dependencies>
+	<descriptionlist>
+		<description>A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth.</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		
+	</changelog>
+	<links></links>
+</package>
