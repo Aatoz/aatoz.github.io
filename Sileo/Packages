@@ -71,7 +71,7 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Noah Graydon <aatozb@gmail.com>
 Depends: me.nepeta.exobar
-Filename: ./debs/com.aatoz.smooth-bar_1.0_darwin-amd64.deb
+Filename: debs/com.aatoz.smooth-bar_1.0_darwin-amd64.deb
 Size: 132540
 MD5sum: 3bdca31af8a92ccec9a9170ec8d79e0d
 SHA1: 5d9ea0fe3bf05dcfcca2a56b1e3bc64189e72fe6
