@@ -53,12 +53,12 @@ Package: com.aatoz.radialwidget
 Version: 1.0.3
 Architecture: iphoneos-arm
 Maintainer: Noah Graydon <aatozb@gmail.com>
-Depends: comes.junesiphone.xeninfo
+Depends: com.junesiphone.xeninfo
 Filename: ./debs/com.aatoz.radialwidget_1.0.3_darwin-amd64.deb
-Size: 68960
-MD5sum: 8a22aff504cb11ec5a599e84dba14d2d
-SHA1: b0a0fa76c779c4337780c274639ff193047f5729
-SHA256: 9e8bff34500c957bfa6d05d93fe983fee042fbc457b76c993d1ae810c02b5998
+Size: 68930
+MD5sum: bc88bc4b89d9aa92b9eda095dff3e32b
+SHA1: 6f1553a48f0f48865cf2bbb6710443fe7e4ccdfd
+SHA256: 44abb69f328c161d046fd9fa4d751bda215dcfa2846296230940f278537d3751
 Section: iWidgets
 Homepage: http://aatoz.github.io/Sileo
 Description: Battery, Signal, and RAM usage, all from a beautiful radial widget.
@@ -72,10 +72,10 @@ Architecture: iphoneos-arm
 Maintainer: Noah Graydon <aatozb@gmail.com>
 Depends: me.nepeta.exobar
 Filename: ./debs/com.aatoz.smooth-bar_1.0_darwin-amd64.deb
-Size: 130988
-MD5sum: c051905eae1c06d481d559ad056daad8
-SHA1: 4d74a52371f01e4727cdd68fe35390c84cd2ec7d
-SHA256: d4cdfd5bfbd3add595c3f559f2d7434b73612f8b788546d72c9e6f27e7a79b58
+Size: 132540
+MD5sum: 3bdca31af8a92ccec9a9170ec8d79e0d
+SHA1: 5d9ea0fe3bf05dcfcca2a56b1e3bc64189e72fe6
+SHA256: 3eaaef41ef18e6f790784535bc4e9065b5acbbf3c9c5840e3fef8963c968adbd
 Section: Status Bars (ExoBar)
 Homepage: http://aatoz.github.io/Sileo
 Description: A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth.
