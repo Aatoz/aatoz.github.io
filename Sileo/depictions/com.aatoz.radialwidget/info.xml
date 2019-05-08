@@ -1,10 +1,11 @@
 <package>
 	<id>com.aatoz.radialwidget</id>
 	<name>Radial Widget</name>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<compatibility>
 		<firmware>
-			<maxiOS>11.4.1</maxiOS>
+			<maxiOS>12.1.2</maxiOS>
+			<otherVersions>11.4.1</otherVersions>
 			<otherVersions>unconfirmed</otherVersions>
 			<!--
 			for otherVersions, you can put either unsupported or unconfirmed
@@ -17,7 +18,7 @@
 	</descriptionlist>
 	<screenshots></screenshots>
 	<changelog>
-		<change>(1.0.2) Bug fix: Cydia download fail due to /.DS_Store file conflict with meridian jailbreak bootstrap</change>
+		<change>Bug fix: Remove stupid .DS_Store file once and for all.</change>
 	</changelog>
 	<links></links>
 </package>
