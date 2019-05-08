@@ -53,12 +53,12 @@ Package: com.aatoz.smooth-bar
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Noah Graydon <aatozb@gmail.com>
-Depends: com.nepeta.exobar
+Depends: me.nepeta.exobar
 Filename: ./debs/smooth-bar_1.0_darwin-amd64.deb
-Size: 131264
-MD5sum: 7c1709537efc90a428546bf40117a51d
-SHA1: 5bc32085ea125f00a4b3bbe8ef4e93a26ca0a6f2
-SHA256: 6704ff94ec43a3d4944450d1c5dcc5d414ebed8b22241f0edd39d9d8b5878255
+Size: 131272
+MD5sum: 21134f3e975fb7bcd3081d3de2d57782
+SHA1: a162425f995eeadb1e9559563b44295a141df0a6
+SHA256: d3c27483f172bcd267ec131f93cce9377a2530116946c4825490847a02389c0e
 Section: Status Bars (ExoBar)
 Homepage: http://aatoz.github.io/Sileo
 Description: A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth.
