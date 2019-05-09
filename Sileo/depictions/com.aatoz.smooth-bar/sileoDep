@@ -1,5 +1,4 @@
 {
-    "headerImage": "",
     "tabs": [
         {
             "class": "DepictionStackView",
@@ -32,7 +31,7 @@
                             "accessibilityText": "Screenshot1"
                         },
                         {
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/3.jpeg",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/3.png",
                             "accessibilityText": "Screenshot2"
                         }
                     ],
