@@ -16,7 +16,10 @@
 		<description>A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Tested on iPhone XS 12.1.2 and iPad 12.1.1</description>
 	</descriptionlist>
 	<screenshots>
-		<screenshot src="1.png">1.png</screenshot>
+		<screenshot>
+			<image>1.png</image>
+			<p>Test p</p>
+		</screenshot>
 		<screenshot>2.jpeg</screenshot>
 	</screenshots>
 	<changelog>
