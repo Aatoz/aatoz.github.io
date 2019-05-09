@@ -145,6 +145,7 @@
             },
 			cache   : false,
             error: function() {
+							console.log("Could not GET " + (bundleid+"/info.xml"));
                 $("#packageError").show();
 				$("#packageInformation").hide();
             }
