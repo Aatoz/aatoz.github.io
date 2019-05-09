@@ -1,6 +1,6 @@
 <package>
-	<id>com.aatoz.radialwidget</id>
-	<name>Radial Widget</name>
+	<id>com.aatoz.smooth-bar</id>
+	<name>Smooth Bar</name>
 	<version>1.0.0</version>
 	<compatibility>
 		<firmware>
@@ -15,7 +15,9 @@
 	<descriptionlist>
 		<description>A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Tested on iPhone XS 12.1.2 and iPad 12.1.1</description>
 	</descriptionlist>
-	<screenshots></screenshots>
+	<screenshots>
+		<img src="bar.png">
+	</screenshots>
 	<changelog>
 		
 	</changelog>
