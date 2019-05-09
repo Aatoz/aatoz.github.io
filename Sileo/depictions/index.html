@@ -144,8 +144,9 @@
 
             },
 			cache   : false,
-            error: function() {
+            error: function(xhr, status, error) {
 							console.log("Could not GET " + (bundleid+"/info.xml"));
+							console.log(error);
                 $("#packageError").show();
 				$("#packageInformation").hide();
             }
