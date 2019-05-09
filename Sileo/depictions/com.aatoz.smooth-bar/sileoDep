@@ -1,0 +1,82 @@
+{
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "views": [
+                {
+                    "useBoldText": true,
+                    "class": "DepictionSubheaderView",
+                    "title": "SmoothBar",
+                    "useBottomMargin": false
+                },
+                {
+                    "markdown": "Smooth status bar",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "class": "DepictionScreenshotsView",
+                    "itemSize": "{160, 275.41333333333336}",
+                    "screenshots": [
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/1.png",
+                            "accessibilityText": "Screenshot0"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg",
+                            "accessibilityText": "Screenshot1"
+                        }
+                    ],
+                    "itemCornerRadius": 6
+                },
+                {
+                    "useBoldText": true,
+                    "class": "DepictionMarkdownView",
+                    "markdown": "A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
+                    "title": "markdown-description",
+                    "useBottomMargin": false
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "1.0.0"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Released",
+                    "text": "05-09-2019"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Price",
+                    "text": "Free"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "Noah Graydon"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                }
+            ],
+            "tabname": "Details"
+        }
+    ],
+    "class": "DepictionTabView",
+    "tintColor": "#0657bb",
+    "minVersion": "0.1"
+}
