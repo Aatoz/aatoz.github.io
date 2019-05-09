@@ -1,5 +1,5 @@
 {
-    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/feature.png",
+    "headerImage": "",
     "tabs": [
         {
             "class": "DepictionStackView",
@@ -11,7 +11,7 @@
                     "useBottomMargin": false
                 },
                 {
-                    "markdown": "Smooth status bar",
+                    "markdown": "Smooth status ExoBar",
                     "useSpacing": true,
                     "class": "DepictionMarkdownView"
                 },
@@ -30,6 +30,10 @@
                         {
                             "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg",
                             "accessibilityText": "Screenshot1"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/3.jpeg",
+                            "accessibilityText": "Screenshot2"
                         }
                     ],
                     "itemCornerRadius": 6
@@ -46,7 +50,7 @@
                 },
                 {
                     "class": "DepictionTableTextView",
-                    "title": "Version",
+                    "title": "Version", 
                     "text": "1.0.0"
                 },
                 {
