@@ -1,5 +1,5 @@
 {
-    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg",
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/1.png",
     "tabs": [
         {
             "class": "DepictionStackView",
@@ -77,6 +77,6 @@
         }
     ],
     "class": "DepictionTabView",
-    "tintColor": "#0657bb",
+    "tintColor": "#dd1100",
     "minVersion": "0.1"
 }
