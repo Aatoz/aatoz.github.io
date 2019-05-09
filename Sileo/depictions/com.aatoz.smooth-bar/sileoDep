@@ -1,5 +1,5 @@
 {
-    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/1.png",
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/header.png",
     "tabs": [
         {
             "class": "DepictionStackView",
@@ -37,7 +37,7 @@
                 {
                     "useBoldText": true,
                     "class": "DepictionMarkdownView",
-                    "markdown": "A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
+                    "markdown": "A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Works well with Edge. Colors pulse beautiful, but helpful, gradients while charging. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
                     "title": "markdown-description",
                     "useBottomMargin": false
                 },
