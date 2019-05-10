@@ -1,85 +1,85 @@
 {
+    "class": "DepictionTabView",
     "tabs": [
         {
             "class": "DepictionStackView",
+            "tabname": "Details",
             "views": [
                 {
+                    "title": "Smooth Bar",
                     "useBoldText": true,
                     "class": "DepictionSubheaderView",
-                    "title": "SmoothBar",
                     "useBottomMargin": false
                 },
                 {
-                    "markdown": "Smooth status ExoBar",
-                    "useSpacing": true,
-                    "class": "DepictionMarkdownView"
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Smooth, helpful ExoBar",
+                    "useSpacing": true
                 },
                 {
                     "class": "DepictionSpacerView",
                     "spacing": 8
                 },
                 {
+                    "itemCornerRadius": 6,
                     "class": "DepictionScreenshotsView",
                     "itemSize": "{160, 275.41333333333336}",
                     "screenshots": [
                         {
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/1.png",
-                            "accessibilityText": "Screenshot0"
+                            "accessibilityText": "Screenshot0",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/3.png"
                         },
                         {
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg",
-                            "accessibilityText": "Screenshot1"
+                            "accessibilityText": "Screenshot1",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/1.png"
                         },
                         {
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/3.png",
-                            "accessibilityText": "Screenshot2"
+                            "accessibilityText": "Screenshot2",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.smooth-bar/screenshots/2.jpeg"
                         }
-                    ],
-                    "itemCornerRadius": 6
+                    ]
                 },
                 {
+                    "title": "markdown-description",
                     "useBoldText": true,
                     "class": "DepictionMarkdownView",
                     "markdown": "A nice, smooth theme designed to tell you what you need to know while keepin it realllll smooth. Works well with Edge. Colors pulse beautiful, but helpful, gradients while charging. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
-                    "title": "markdown-description",
                     "useBottomMargin": false
                 },
                 {
                     "class": "DepictionSeparatorView"
                 },
                 {
-                    "class": "DepictionTableTextView",
-                    "title": "Version", 
-                    "text": "1.0.0"
+                    "title": "Version",
+                    "text": "1.0",
+                    "class": "DepictionTableTextView"
                 },
                 {
-                    "class": "DepictionTableTextView",
                     "title": "Released",
-                    "text": "05-09-2019"
+                    "text": "05-10-2019",
+                    "class": "DepictionTableTextView"
                 },
                 {
-                    "class": "DepictionTableTextView",
                     "title": "Price",
-                    "text": "Free"
+                    "text": "Free",
+                    "class": "DepictionTableTextView"
                 },
                 {
                     "class": "DepictionSpacerView",
                     "spacing": 8
                 },
                 {
-                    "class": "DepictionTableTextView",
                     "title": "Developer",
-                    "text": "Noah Graydon"
+                    "text": "Noah Graydon",
+                    "class": "DepictionTableTextView"
                 },
                 {
                     "class": "DepictionSpacerView",
                     "spacing": 8
                 }
-            ],
-            "tabname": "Details"
+            ]
         }
     ],
-    "class": "DepictionTabView",
-    "tintColor": "#dd1100",
+    "tintColor": "#0657bb",
     "minVersion": "0.1"
 }
