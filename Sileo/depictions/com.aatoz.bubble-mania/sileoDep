@@ -1,0 +1,86 @@
+{
+    "class": "DepictionTabView",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "title": "BubbleMania",
+                    "useBoldText": true,
+                    "class": "DepictionSubheaderView",
+                    "useBottomMargin": false
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Beautiful bubblies with gradients.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "itemCornerRadius": 6,
+                    "class": "DepictionScreenshotsView",
+                    "itemSize": "{160, 275.41333333333336}",
+                    "screenshots": [
+                        {
+                            "accessibilityText": "Screenshot0",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/sunset.JPG"
+                        },
+                        {
+                            "accessibilityText": "Screenshot1",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/dark.JPG"
+                        },
+                        {
+                            "accessibilityText": "Screenshot2",
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/aqua.JPG"
+                        }
+                    ]
+                },
+                {
+                    "title": "markdown-description",
+                    "useBoldText": true,
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Beautiful bubblies on top of fancy backgrounds -- oh my! Best when used on OLED screens.Tested on iPhone XS 12.1.2 and iPad 12.1.1",
+                    "useBottomMargin": false
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "title": "Version",
+                    "text": "1.0",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Released",
+                    "text": "05-10-2019",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Price",
+                    "text": "Free",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "title": "Developer",
+                    "text": "Noah Graydon",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                }
+            ]
+        }
+    ],
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/sunset.JPG",
+    "tintColor": "#0657bb",
+    "minVersion": "0.1"
+}
