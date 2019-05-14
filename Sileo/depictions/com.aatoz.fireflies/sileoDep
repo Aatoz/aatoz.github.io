@@ -10,7 +10,7 @@
                     "useBoldText": true
                 },
                 {
-                    "markdown": "The solar system",
+                    "markdown": "Animated fireflies",
                     "class": "DepictionMarkdownView",
                     "useSpacing": true
                 },
@@ -35,7 +35,7 @@
                 },
                 {
                     "useBottomMargin": false,
-                    "markdown": "An animated model of our solar system, with a customizable background. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
+                    "markdown": "An animated background of beautiful fireflies, complete with a customizable background. Touch anywhere to generate more fireflies! Tested on iPhone XS 12.1.2 and iPad 12.1.1",
                     "class": "DepictionMarkdownView",
                     "title": "markdown-description",
                     "useBoldText": true
