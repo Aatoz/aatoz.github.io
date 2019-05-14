@@ -30,6 +30,14 @@
                         {
                             "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/trans.png",
                             "accessibilityText": "Screenshot1"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/preview_trans.gif",
+                            "accessibilityText": "Screenshot3"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/preview.gif",
+                            "accessibilityText": "Screenshot4"
                         }
                     ]
                 },
