@@ -1,19 +1,17 @@
 {
-    "class": "DepictionTabView",
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/dark.png",
     "tabs": [
         {
-            "class": "DepictionStackView",
-            "tabname": "Details",
             "views": [
                 {
-                    "title": "BubbleMania",
-                    "useBoldText": true,
+                    "useBottomMargin": false,
                     "class": "DepictionSubheaderView",
-                    "useBottomMargin": false
+                    "title": "The solar system",
+                    "useBoldText": true
                 },
                 {
+                    "markdown": "The solar system",
                     "class": "DepictionMarkdownView",
-                    "markdown": "Beautiful bubblies with gradients.",
                     "useSpacing": true
                 },
                 {
@@ -21,66 +19,64 @@
                     "spacing": 8
                 },
                 {
-                    "itemCornerRadius": 6,
                     "class": "DepictionScreenshotsView",
                     "itemSize": "{160, 275.41333333333336}",
+                    "itemCornerRadius": 6,
                     "screenshots": [
                         {
-                            "accessibilityText": "Screenshot0",
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/sunset.JPG"
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/dark.png",
+                            "accessibilityText": "Screenshot0"
                         },
                         {
-                            "accessibilityText": "Screenshot1",
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/dark.JPG"
-                        },
-                        {
-                            "accessibilityText": "Screenshot2",
-                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/aqua.JPG"
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.solar-system/screenshots/trans.png",
+                            "accessibilityText": "Screenshot1"
                         }
                     ]
                 },
                 {
-                    "title": "markdown-description",
-                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "markdown": "An animated model of our solar system, with a customizable background. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
                     "class": "DepictionMarkdownView",
-                    "markdown": "Beautiful bubblies on top of fancy backgrounds -- oh my! Best when used on OLED screens.Tested on iPhone XS 12.1.2 and iPad 12.1.1",
-                    "useBottomMargin": false
+                    "title": "markdown-description",
+                    "useBoldText": true
                 },
                 {
                     "class": "DepictionSeparatorView"
                 },
                 {
-                    "title": "Version",
-                    "text": "1.0.1",
-                    "class": "DepictionTableTextView"
+                    "text": "1.0",
+                    "class": "DepictionTableTextView",
+                    "title": "Version"
                 },
                 {
-                    "title": "Released",
-                    "text": "05-10-2019",
-                    "class": "DepictionTableTextView"
+                    "text": "05-14-2019",
+                    "class": "DepictionTableTextView",
+                    "title": "Released"
                 },
                 {
-                    "title": "Price",
                     "text": "Free",
-                    "class": "DepictionTableTextView"
+                    "class": "DepictionTableTextView",
+                    "title": "Price"
                 },
                 {
                     "class": "DepictionSpacerView",
                     "spacing": 8
                 },
                 {
-                    "title": "Developer",
                     "text": "Noah Graydon",
-                    "class": "DepictionTableTextView"
+                    "class": "DepictionTableTextView",
+                    "title": "Developer"
                 },
                 {
                     "class": "DepictionSpacerView",
                     "spacing": 8
                 }
-            ]
+            ],
+            "class": "DepictionStackView",
+            "tabname": "Details"
         }
     ],
-    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bubble-mania/screenshots/sunset.JPG",
-    "tintColor": "#0657bb",
-    "minVersion": "0.1"
+    "class": "DepictionTabView",
+    "minVersion": "0.1",
+    "tintColor": "#0657bb"
 }
