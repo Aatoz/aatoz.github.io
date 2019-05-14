@@ -1,0 +1,40 @@
+<package>
+	<id>com.aatoz.fireflies</id>
+	<name>Fireflies</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<maxiOS>12.1.2</maxiOS>
+			<otherVersions>unconfirmed</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies></dependencies>
+	<descriptionlist>
+		<description>An animated model of our solar system, with a customizable background. Tested on iPhone XS 12.1.2 and iPad 12.1.1</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<image>dark.jpg</image>
+			<description>Dark theme</description>
+		</screenshot>
+		<screenshot>
+			<image>trans.png</image>
+			<description>Transparent theme</description>
+		</screenshot>
+		<screenshot>
+			<image>preview_touch.MOV</image>
+			<description>Touch anywhere to generate more fireflies</description>
+		</screenshot>
+		<screenshot>
+			<image>preview.MOV</image>
+			<description>Animated Preview</description>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		
+	</changelog>
+	<links></links>
+</package>
