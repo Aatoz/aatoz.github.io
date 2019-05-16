@@ -1,0 +1,90 @@
+{
+    "headerImage": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bokeh/screenshots/trans.png",
+    "tabs": [
+        {
+            "views": [
+                {
+                    "useBottomMargin": false,
+                    "class": "DepictionSubheaderView",
+                    "title": "Bokeh",
+                    "useBoldText": true
+                },
+                {
+                    "markdown": "Bokeh effect",
+                    "class": "DepictionMarkdownView",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "class": "DepictionScreenshotsView",
+                    "itemSize": "{160, 275.41333333333336}",
+                    "itemCornerRadius": 6,
+                    "screenshots": [
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bokeh/screenshots/trans.png",
+                            "accessibilityText": "Screenshot0"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bokeh/screenshots/bokehSansBlur.png",
+                            "accessibilityText": "Screenshot1"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bokeh/screenshots/transBokehSansBlur.png",
+                            "accessibilityText": "Screenshot2"
+                        },
+                        {
+                            "url": "http://aatoz.github.io/Sileo/depictions/com.aatoz.bokeh/screenshots/darkSansBlur.png",
+                            "accessibilityText": "Screenshot3"
+                        }
+                    ]
+                },
+                {
+                    "useBottomMargin": false,
+                    "markdown": "An animated background with a beautiful, bokeh effect, complete with a customizable background. Tested on iPhone XS 12.1.2 and iPad 12.1.1",
+                    "class": "DepictionMarkdownView",
+                    "title": "markdown-description",
+                    "useBoldText": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "text": "1.0",
+                    "class": "DepictionTableTextView",
+                    "title": "Version"
+                },
+                {
+                    "text": "05-16-2019",
+                    "class": "DepictionTableTextView",
+                    "title": "Released"
+                },
+                {
+                    "text": "free",
+                    "class": "DepictionTableTextView",
+                    "title": "Price"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                },
+                {
+                    "text": "Noah Graydon",
+                    "class": "DepictionTableTextView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 8
+                }
+            ],
+            "class": "DepictionStackView",
+            "tabname": "Details"
+        }
+    ],
+    "class": "DepictionTabView",
+    "minVersion": "0.1",
+    "tintColor": "#7747b5"
+}

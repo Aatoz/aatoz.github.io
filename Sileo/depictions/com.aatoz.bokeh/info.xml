@@ -1,0 +1,48 @@
+<package>
+	<id>com.aatoz.bokeh</id>
+	<name>Bokeh</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<maxiOS>12.1.2</maxiOS>
+			<otherVersions>unconfirmed</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies></dependencies>
+	<descriptionlist>
+		<description>An animated background with a beautiful, bokeh effect, complete with a customizable background. Tested on iPhone XS 12.1.2 and iPad 12.1.1</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<image>trans.png</image>
+			<description>Transparent theme</description>
+		</screenshot>
+		<screenshot>
+			<image>bokehSansBlur.png</image>
+			<description>Bokeh without bubble blur</description>
+		</screenshot>
+		<screenshot>
+			<image>transBokehSansBlur.png</image>
+			<description>Transparent without bubble blur</description>
+		</screenshot>
+		<screenshot>
+			<image>darkSansBlur.png</image>
+			<description>Dark theme</description>
+		</screenshot>
+		<screenshot>
+			<image>preview.gif</image>
+			<description>Animated Preview</description>
+		</screenshot>
+		<screenshot>
+			<image>transSansBlur.gif</image>
+			<description>Transparent without bubble blur</description>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		
+	</changelog>
+	<links></links>
+</package>

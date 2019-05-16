@@ -1,3 +1,4 @@
+dpkg-deb -Zgzip -b bokeh
 dpkg-deb -Zgzip -b bubble-mania
 dpkg-deb -Zgzip -b fireflies
 dpkg-deb -Zgzip -b floaty-squares
